@@ -21,8 +21,8 @@
               </h1>
               <h5 style="margin: 50px 0">Estamos aquí para usted
               </h5> 
-              <p>Somos un Grupo de estudiantes de la Universidad Nacional de Colombia, y desarrollamos esta aplicacion como proyecto final del curso de computacion grafica.
-              El proposito es adquirir experiencia en el trabajo en equipo entre miembros de varias disciplinas y asi lograr metas que solo con los conocimientos de nuestra profecion no serian posibles de desarrollar.</p> 
+              <p style="text-align: justify">Somos un Grupo de estudiantes de la Universidad Nacional de Colombia, y desarrollamos esta aplicacion como proyecto final del curso de computacion grafica.
+              El proposito es adquirir experiencia en el trabajo en equipo entre miembros de varias disciplinas y asi lograr metas que solo con los conocimientos de nuestra profesión no serian posibles de desarrollar.</p> 
             </div>  
           </div> 
         </div>
