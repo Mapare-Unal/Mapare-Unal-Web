@@ -45,6 +45,7 @@
       </div>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -80,7 +81,22 @@ export default {
            email: info.email,
            type: info.type,
            size: info.size
-          });
+          })
+          .then(
+            this.$bvModal
+              .msgBoxOk("Cotización realizada exitosamente", {
+                title: "Cotización",
+                size: "sm",
+                buttonSize: "sm",
+                okVariant: "primary",
+                headerClass: "p-2 border-bottom-0",
+                footerClass: "p-2 border-top-0",
+                centered: true
+              })
+              .then(() => {
+                this.$router.push("home");
+              })
+          );
       }
     }
   }
