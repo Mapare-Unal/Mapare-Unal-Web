@@ -21,12 +21,8 @@
               </h1>
               <h5 style="margin: 50px 0">Estamos aquí para usted
               </h5> 
-              <p>Como líderes industriales desde nuestra fundación en 2000, 
-                nos hemos acostumbrado a trabajar con empresas de todos los 
-                tamaños, siempre logrando los mejores productos con mayoristas 
-                y empresarios mundiales. Ponemos nuestras ideas en un solo plato 
-                y lo que resulta es una actitud de liderazgo que se adhiere a los 
-                estándares más altos.</p> 
+              <p>Somos un Grupo de estudiantes de la Universidad Nacional de Colombia, y desarrollamos esta aplicacion como proyecto final del curso de computacion grafica.
+              El proposito es adquirir experiencia en el trabajo en equipo entre miembros de varias disciplinas y asi lograr metas que solo con los conocimientos de nuestra profecion no serian posibles de desarrollar.</p> 
             </div>  
           </div> 
         </div>
@@ -62,7 +58,7 @@
         <div class="col-6" align="center">
           <div id="estrusoraHome">
             <img src="../assets/basic-extruder.png" />
-            <h3>Estrusora</h3>
+            <h3>Extrusora</h3>
             <p>Caracteristicas</p>
             <span>
               La extrusión es un proceso continuo donde las
