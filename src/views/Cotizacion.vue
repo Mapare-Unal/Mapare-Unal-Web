@@ -87,7 +87,9 @@ export default {
            email: info.email,
            type: info.type,
            size: info.size,
-           received: false
+           received: false,
+           publishDate: new Date(),
+           id_att: (size + 1)
           })
           .then(
             this.$bvModal
