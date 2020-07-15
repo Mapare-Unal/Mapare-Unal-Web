@@ -19,7 +19,7 @@
                 <option value="1" selected>Extrusora</option>
                 <option value="2">Inyectora</option>
                 <option value="3">Trituradora</option>
-                <option value="4">Compresora</option>
+                <option value="4">Prensa</option>
               </select>
             </div>
           </div>

@@ -31,15 +31,13 @@
       <div id="maquinasHome" class="row" style="margin-top:30px">
         <div class="col-6" align="center">
           <div id="compresoraHome">
-            <img src="../assets/basic-compressor.png" />
-            <h3>Compresora</h3>
+            <img src="../assets/sheetpress.jpeg" />
+            <h3>Prensa</h3>
             <p>Caracteristicas</p>
             <span>
-              El plástico se calienta dentro del horno
-              y se presiona lentamente en un molde con un robo
-              de automóvil. Muy adecuada para hacer objetos más
-              grandes, esta máquina es ideal para la creación de
-              prototipos, pero no es buena para la producción.
+              presiona el plástico en láminas recicladas.‍
+              Esta máquina puede hacer múltiples hojas (1x1 metros) 
+              por día reciclando alrededor de 20 kg de plástico por hoja.
             </span>
           </div>
           <div id="inyectoraHome">
