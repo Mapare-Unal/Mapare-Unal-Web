@@ -16,11 +16,10 @@
               <input type="text" placeholder="Apellidos" v-model="lastName" required/>
               <p>Ingresar maquinas</p>
               <select class="custom-select" v-model="type" required>
-                <option selected>Maquina</option>
-                <option value="1">Extrusora</option>
+                <option value="1" selected>Extrusora</option>
                 <option value="2">Inyectora</option>
                 <option value="3">Trituradora</option>
-                <option value="4">Compresora</option>
+                <option value="4">Prensa</option>
               </select>
             </div>
           </div>
@@ -28,8 +27,7 @@
             <div class="col-md-6" align="left">
               <p>Ingresar tamaño</p>
               <select class="custom-select" v-model="size" required>
-                <option selected>Tamaño</option>
-                <option value="1">Pequeña</option>
+                <option value="1" selected>Pequeña</option>
                 <option value="2">Mediana</option>
                 <option value="3">Grande</option>
               </select>
@@ -45,13 +43,22 @@
       </div>
     </div>
   </div>
+  
 </template>
 
 <script>
 //import firebase from "firebase";
 import db from "../db.js";
+let size;
 
 export default {
+  mounted(){
+    db.collection("forms")
+      .get()
+      .then(snapshot => {
+        size = snapshot.size;
+      })
+  },
   data: function() {
     return{
       name: null,
@@ -73,14 +80,32 @@ export default {
         }
 
         db.collection("forms")
-          .doc()
+          .doc((size + 1).toString())
           .set({
            name: info.name,
            lastName: info.lastName,
            email: info.email,
            type: info.type,
-           size: info.size
-          });
+           size: info.size,
+           received: false,
+           publishDate: new Date(),
+           id_att: (size + 1)
+          })
+          .then(
+            this.$bvModal
+              .msgBoxOk("Cotización realizada exitosamente", {
+                title: "Cotización",
+                size: "sm",
+                buttonSize: "sm",
+                okVariant: "primary",
+                headerClass: "p-2 border-bottom-0",
+                footerClass: "p-2 border-top-0",
+                centered: true
+              })
+              .then(() => {
+                this.$router.push("home");
+              })
+          );
       }
     }
   }

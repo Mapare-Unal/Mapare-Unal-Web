@@ -3,7 +3,7 @@
     <header class="header">
       <div class="shadow-lg bg-white rounded">
         <b-navbar toggleable="lg" type="light" variant="white">
-          <b-navbar-brand to="/">
+          <b-navbar-brand to="/home">
             <img src="../assets/Logo1transp.png" class="d-inline-block align-top" height="100px" />
           </b-navbar-brand>
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -14,14 +14,10 @@
               <b-navbar-nav>
                 <div class="collapse navbar-collapse" id="navOpciones">
                   <ul class="navbar-nav">
-                    <b-nav-item href="#" to="/">
+                    <b-nav-item href="#" to="/home">
                     Inicio</b-nav-item>
                     <b-nav-item href="#" to="/cotizacion">
                     Cotizaciones</b-nav-item>
-                    <b-nav-item href="#" to="/cotizacion">
-                    Quiénes somos</b-nav-item>
-                    <b-nav-item href="#" to="/cotizacion">
-                    Contactenos</b-nav-item>
                   </ul>
                 </div>
               </b-navbar-nav>
